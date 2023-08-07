@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3c4bf;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.birthday_img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+
+/* Add CSS styles for the container and header if needed */
+
+.slideshow-container {
+    max-width: 800px; /* Set the desired width for the slideshow */
+    overflow: hidden; /* Hide the overflow to limit the size */
+    margin: 0 auto; /* Center the slideshow container */
+    text-align: center; /* Center the slides within the container */
+}
+
+.slide {
+    display: inline-block; /* Display slides in a row */
+    width: 80%; /* Ensure each slide takes the full width of the container */
+    transition: transform 5s ease; /* Apply a sliding effect with 1-second duration */
+    text-align: center; /* Center the image within the slide */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+
+@keyframes slideEffect {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
