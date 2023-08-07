@@ -20,7 +20,12 @@ function showSlides() {
         slideIndex = 0; // Reset the index if all slides are shown
     }
     slides[slideIndex].style.display = "block"; // Show the next slide
-    setTimeout(showSlides, 5000); // Change slide every 3 seconds
+    setTimeout(showSlides, 3000); // Change slide every 3 seconds
 }
 
-showSlides();
+// Hide all slides on page load
+for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+
+showSlides(); // Start the slideshow
